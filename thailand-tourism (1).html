@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>มหัศจรรย์ไทยแลนด์ — ดินแดนแห่งรอยยิ้ม</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Sarabun:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet"/>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="preloader"><div class="loader-ring"></div></div>
+
+<!-- ░░ NAVBAR ░░ -->
+<nav id="mainNav" class="py-3">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#" class="navbar-brand-text">Thai<span>land</span></a>
+      <div class="d-none d-lg-flex align-items-center gap-1">
+        <a href="#destinations" class="nav-link-custom">จุดหมาย</a>
+        <a href="#experiences"  class="nav-link-custom">ประสบการณ์</a>
+        <a href="#gallery"      class="nav-link-custom">แกลเลอรี่</a>
+        <a href="#seasons"      class="nav-link-custom">ฤดูกาล</a>
+        <a href="#about"        class="nav-link-custom">เกี่ยวกับ</a>
+        <a href="#tips"         class="nav-link-custom">เคล็ดลับ</a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#cta-section" class="btn-book d-none d-md-inline">จองทริป</a>
+        <button class="navbar-toggler d-lg-none border-0 bg-transparent p-0"
+                data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-label="เมนู">
+          <i class="bi bi-list text-white fs-3"></i>
+        </button>
+      </div>
+    </div>
+    <div class="collapse mt-3" id="mobileNav">
+      <div class="d-flex flex-column gap-2 py-2 px-3" style="background:rgba(26,20,16,.95);border-radius:.75rem">
+        <a href="#destinations" class="nav-link-custom">จุดหมาย</a>
+        <a href="#experiences"  class="nav-link-custom">ประสบการณ์</a>
+        <a href="#gallery"      class="nav-link-custom">แกลเลอรี่</a>
+        <a href="#seasons"      class="nav-link-custom">ฤดูกาล</a>
+        <a href="#about"        class="nav-link-custom">เกี่ยวกับ</a>
+        <a href="#tips"         class="nav-link-custom">เคล็ดลับ</a>
+        <a href="#cta-section"  class="btn-book text-center mt-1">จองทริป</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ░░ HERO — วิวภูเขาและทะเลไทย ░░ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-deco"></div>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8 col-xl-7">
+        <div class="hero-eyebrow">ยินดีต้อนรับสู่</div>
+        <h1 class="hero-title">มหัศจรรย์<br><em>ไทยแลนด์</em></h1>
+        <p class="hero-sub">สัมผัสความงามอันหลากหลาย ตั้งแต่หาดทรายขาว ป่าเขาลำเนาไพร วัดวาอาราม และวัฒนธรรมอันล้ำค่า ที่คอยต้อนรับคุณด้วยรอยยิ้มอันอบอุ่น</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#destinations" class="btn-hero-primary"><i class="bi bi-compass"></i> สำรวจจุดหมาย</a>
+          <a href="#gallery"      class="btn-hero-ghost"><i class="bi bi-images"></i> ชมแกลเลอรี่</a>
+        </div>
+        <div class="hero-search">
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <div class="flex-fill">
+              <span class="search-label"><i class="bi bi-geo-alt"></i> จุดหมายปลายทาง</span>
+              <input class="search-input" type="text" placeholder="เช่น เชียงใหม่, ภูเก็ต, กระบี่…"/>
+            </div>
+            <div class="search-divider"></div>
+            <div class="flex-fill">
+              <span class="search-label"><i class="bi bi-calendar3"></i> วันเดินทาง</span>
+              <input class="search-input" type="text" placeholder="เลือกวันที่…"/>
+            </div>
+            <button class="btn-search"><i class="bi bi-search me-1"></i> ค้นหา</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span>เลื่อนลง</span></div>
+</section>
+
+<!-- ░░ DESTINATIONS ░░ -->
+<section id="destinations">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="sec-eyebrow justify-content-center">จุดหมายยอดนิยม</div>
+      <h2 class="sec-title">สถานที่ที่คุณต้องไปสัมผัส</h2>
+      <div class="gold-divider justify-content-center"><i class="bi bi-gem"></i></div>
+      <p class="sec-sub mx-auto text-center">ไทยแลนด์มีสถานที่ท่องเที่ยวที่หลากหลายรอให้คุณค้นพบ ไม่ว่าจะเป็นเมืองใหญ่ที่ตื่นตาหรือธรรมชาติที่เงียบสงบ</p>
+    </div>
+
+    <!-- แถวที่ 1 -->
+    <div class="row g-4">
+      <div class="col-lg-5 reveal reveal-delay-1">
+        <div class="dest-card dest-card-lg">
+          <img class="dest-img" src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=900&q=85" alt="กรุงเทพมหานคร" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-body">
+            <div class="dest-region">ภาคกลาง</div>
+            <div class="dest-name">กรุงเทพมหานคร</div>
+            <p class="dest-desc">เมืองหลวงที่ไม่เคยหลับ ผสมผสานความทันสมัยกับมรดกทางวัฒนธรรมอันยิ่งใหญ่</p>
+            <div class="dest-tags"><span class="dest-tag">วัดวาอาราม</span><span class="dest-tag">ตลาดลอยน้ำ</span><span class="dest-tag">ไนท์ไลฟ์</span><span class="dest-tag">อาหารริมทาง</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <div class="dest-card">
+              <img class="dest-img" src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=700&q=85" alt="ภูเก็ต" loading="lazy"/>
+              <div class="dest-overlay"></div>
+              <div class="dest-body">
+                <div class="dest-region">ภาคใต้</div>
+                <div class="dest-name">ภูเก็ต</div>
+                <p class="dest-desc">ไข่มุกแห่งอันดามัน ชายหาดสวยงามระดับโลก</p>
+                <div class="dest-tags"><span class="dest-tag">ชายหาด</span><span class="dest-tag">ดำน้ำ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card">
+              <img class="dest-img" src="https://images.unsplash.com/photo-1571314669826-e8c23d33fd23?w=700&q=85" alt="เชียงใหม่" loading="lazy"/>
+              <div class="dest-overlay"></div>
+              <div class="dest-body">
+                <div class="dest-region">ภาคเหนือ</div>
+                <div class="dest-name">เชียงใหม่</div>
+                <p class="dest-desc">กุหลาบแห่งเหนือ วัฒนธรรมล้านนาอันงดงาม</p>
+                <div class="dest-tags"><span class="dest-tag">วัดโบราณ</span><span class="dest-tag">ช้าง</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card">
+              <img class="dest-img" src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=700&q=85" alt="กระบี่" loading="lazy"/>
+              <div class="dest-overlay"></div>
+              <div class="dest-body">
+                <div class="dest-region">ภาคใต้</div>
+                <div class="dest-name">กระบี่</div>
+                <p class="dest-desc">หน้าผาหินปูนโอบล้อมทะเลสวรรค์</p>
+                <div class="dest-tags"><span class="dest-tag">เกาะ</span><span class="dest-tag">ปีนหน้าผา</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card">
+              <img class="dest-img" src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=700&q=85" alt="อยุธยา" loading="lazy"/>
+              <div class="dest-overlay"></div>
+              <div class="dest-body">
+                <div class="dest-region">ภาคกลาง</div>
+                <div class="dest-name">อยุธยา</div>
+                <p class="dest-desc">มรดกโลก นครโบราณราชธานีแห่งสยาม</p>
+                <div class="dest-tags"><span class="dest-tag">มรดกโลก</span><span class="dest-tag">ประวัติศาสตร์</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- แถวที่ 2 -->
+    <div class="row g-4 mt-2">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="dest-card">
+          <img class="dest-img" src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=700&q=85" alt="เกาะสมุย" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-body">
+            <div class="dest-region">ภาคใต้ — อ่าวไทย</div>
+            <div class="dest-name">เกาะสมุย</div>
+            <p class="dest-desc">เกาะสวรรค์กลางอ่าวไทย ปาล์มหาด รีสอร์ทหรู</p>
+            <div class="dest-tags"><span class="dest-tag">รีสอร์ท</span><span class="dest-tag">ดำน้ำ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="dest-card">
+          <img class="dest-img" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=85" alt="เชียงราย" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-body">
+            <div class="dest-region">ภาคเหนือ</div>
+            <div class="dest-name">เชียงราย</div>
+            <p class="dest-desc">วัดร่องขุ่น ป่าชา สามเหลี่ยมทองคำ ธรรมชาติบริสุทธิ์</p>
+            <div class="dest-tags"><span class="dest-tag">วัดขาว</span><span class="dest-tag">ทุ่งชา</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="dest-card">
+          <img class="dest-img" src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=700&q=85" alt="เขาใหญ่" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-body">
+            <div class="dest-region">ภาคกลาง</div>
+            <div class="dest-name">เขาใหญ่</div>
+            <p class="dest-desc">มรดกโลกทางธรรมชาติ ป่าดิบชื้น น้ำตก ช้างป่า</p>
+            <div class="dest-tags"><span class="dest-tag">ป่า</span><span class="dest-tag">ผจญภัย</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ EXPERIENCES — แต่ละ card มีรูปด้านบน ░░ -->
+<section id="experiences">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-6 reveal">
+        <div class="sec-eyebrow">ประสบการณ์</div>
+        <h2 class="sec-title">สัมผัสประสบการณ์<br>ที่ไม่มีที่ไหนเหมือน</h2>
+        <div class="gold-divider" style="max-width:280px"><i class="bi bi-diamond"></i></div>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <p class="sec-sub">ไทยแลนด์มอบประสบการณ์ที่หลากหลายครบครัน ตั้งแต่การผจญภัยในธรรมชาติ ไปจนถึงการผ่อนคลายในรีสอร์ทหรู</p>
+      </div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&q=85" alt="ชายหาดไทย" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🏖️</span>
+            <h5>ชายหาดและทะเล</h5>
+            <p>ดำน้ำดูปะการัง ล่องเรือกาบ หรือพักผ่อนบนหาดทรายขาวที่สวยงามอันดับต้นๆ ของโลก</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?w=700&q=85" alt="ช้างไทย" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🐘</span>
+            <h5>สัตว์ป่าและธรรมชาติ</h5>
+            <p>พบปะช้างในบ้านช้างเชิงอนุรักษ์ ล่องแก่งในป่าเหนือ หรือดูนกนานาชนิดในเขตรักษาพันธุ์สัตว์ป่า</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=700&q=85" alt="อาหารไทย" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🍜</span>
+            <h5>อาหารและวัฒนธรรม</h5>
+            <p>เรียนทำอาหารไทยต้นตำรับ ชิมอาหารริมทาง ชมการแสดงโขนและมหรสพไทย</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?w=700&q=85" alt="วัดไทย" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🏯</span>
+            <h5>ประวัติศาสตร์และโบราณคดี</h5>
+            <p>เยี่ยมชมวัดวาอาราม พระราชวัง และเมืองโบราณที่มีอายุกว่าพันปี</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=85" alt="สปาไทย" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🧘</span>
+            <h5>สปาและนวดไทย</h5>
+            <p>ผ่อนคลายกับการนวดไทยแท้ สปาสมุนไพร และรีสอร์ทเวลเนสระดับโลก</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <div class="exp-card">
+          <div class="exp-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=700&q=85" alt="ตลาดลอยน้ำ" loading="lazy"/>
+            <div class="exp-img-overlay"></div>
+          </div>
+          <div class="exp-body">
+            <span class="exp-icon-sm">🛍️</span>
+            <h5>ช้อปปิ้งและตลาด</h5>
+            <p>ตลาดนัดจตุจักร ถนนข้าวสาร ตลาดลอยน้ำ และห้างสรรพสินค้าหรูหรา</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░ GALLERY — mosaic 8 ช่อง ░░ -->
+<section id="gallery">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="sec-eyebrow justify-content-center" style="color:var(--gold-lt)">แกลเลอรี่</div>
+      <h2 class="sec-title" style="color:#fff">ความงามที่ต้องมาสัมผัสด้วยตัวเอง</h2>
+      <div class="gold-divider justify-content-center"><i class="bi bi-camera"></i></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1">
+        <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1000&q=85" alt="วัดพระแก้ว กรุงเทพ" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🏛️ วัดพระแก้ว — กรุงเทพมหานคร</div>
+      </div>
+      <div class="gallery-item gi-2">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=85" alt="ชายหาดภูเก็ต" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🏖️ ภูเก็ต</div>
+      </div>
+      <div class="gallery-item gi-3">
+        <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=600&q=85" alt="เชียงใหม่" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🏮 เชียงใหม่</div>
+      </div>
+      <div class="gallery-item gi-4">
+        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=600&q=85" alt="กระบี่" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🌊 กระบี่</div>
+      </div>
+      <div class="gallery-item gi-5">
+        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=85" alt="กรุงเทพยามค่ำคืน" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🌃 กรุงเทพยามค่ำ</div>
+      </div>
+      <div class="gallery-item gi-6">
+        <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=600&q=85" alt="อาหารไทย" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🍜 อาหารไทยต้นตำรับ</div>
+      </div>
+      <div class="gallery-item gi-7">
+        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1000&q=85" alt="หมู่เกาะทะเลอันดามัน" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">⛵ หมู่เกาะทะเลอันดามัน</div>
+      </div>
+      <div class="gallery-item gi-8">
+        <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=600&q=85" alt="อยุธยา" loading="lazy"/>
+        <div class="g-zoom"><i class="bi bi-zoom-in"></i></div>
+        <div class="g-label">🏛️ อยุธยา</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ SEASONS — แต่ละ card มีรูปจริง ░░ -->
+<section id="seasons">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="sec-eyebrow justify-content-center">ฤดูกาลท่องเที่ยว</div>
+      <h2 class="sec-title">เดินทางช่วงไหนดี?</h2>
+      <div class="gold-divider justify-content-center"><i class="bi bi-sun"></i></div>
+      <p class="sec-sub mx-auto text-center">แต่ละฤดูกาลมีเสน่ห์แตกต่างกัน เลือกวางแผนการเดินทางให้เหมาะสม</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="season-card">
+          <div class="season-img-wrap">
+            <img src="https://images.unsplash.com/photo-1490077476659-095159692ab5?w=700&q=85" alt="ฤดูหนาว ทะเลสวรรค์" loading="lazy"/>
+            <div class="season-img-overlay season-cool"></div>
+          </div>
+          <div class="season-body">
+            <span class="season-icon">❄️</span>
+            <h4>ฤดูหนาว</h4>
+            <div class="season-months">พฤศจิกายน — กุมภาพันธ์</div>
+            <p>ช่วงที่ดีที่สุด อากาศเย็นสบาย ไม่มีฝน เหมาะกับทุกกิจกรรม ทั้งทะเลและป่าเขา</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="season-card">
+          <div class="season-img-wrap">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=700&q=85" alt="สงกรานต์ฤดูร้อน" loading="lazy"/>
+            <div class="season-img-overlay season-hot"></div>
+          </div>
+          <div class="season-body">
+            <span class="season-icon">☀️</span>
+            <h4>ฤดูร้อน</h4>
+            <div class="season-months">มีนาคม — พฤษภาคม</div>
+            <p>อากาศร้อน คึกคักด้วยเทศกาลสงกรานต์ เหมาะสำหรับสัมผัสวัฒนธรรมไทยแท้ๆ</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="season-card">
+          <div class="season-img-wrap">
+            <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=700&q=85" alt="ป่าเขียวฤดูฝน" loading="lazy"/>
+            <div class="season-img-overlay season-rainy"></div>
+          </div>
+          <div class="season-body">
+            <span class="season-icon">🌧️</span>
+            <h4>ฤดูฝน</h4>
+            <div class="season-months">มิถุนายน — ตุลาคม</div>
+            <p>นักท่องเที่ยวน้อย ราคาถูก ธรรมชาติเขียวชอุ่ม เหมาะการท่องเที่ยวแนวผจญภัย</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ ABOUT — รูปคอลัมน์ซ้าย ░░ -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center gy-5 gx-lg-5">
+      <div class="col-lg-5 reveal">
+        <div class="row g-3">
+          <div class="col-12">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=85" class="about-img-main" alt="ประเทศไทย" loading="lazy"/>
+          </div>
+          <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?w=500&q=85" class="about-img-small" alt="วัดไทย" loading="lazy"/>
+          </div>
+          <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=500&q=85" class="about-img-small" alt="อาหารไทย" loading="lazy"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <div class="sec-eyebrow">ทำไมต้องไทยแลนด์?</div>
+        <h2 class="sec-title">ดินแดนที่มีทุกอย่าง<br>ที่นักเดินทางฝันถึง</h2>
+        <div class="gold-divider" style="max-width:280px"><i class="bi bi-heart-fill"></i></div>
+        <p style="font-size:.95rem;color:var(--ink-lt);line-height:1.8;margin-bottom:1.75rem;font-weight:300">ไทยแลนด์ไม่ใช่แค่จุดหมายปลายทาง แต่คือประสบการณ์ที่จะเปลี่ยนมุมมองชีวิตของคุณ ด้วยความหลากหลายทางธรรมชาติ วัฒนธรรม และอาหารที่ไม่มีที่ไหนเทียบ</p>
+        <div class="about-check"><i class="bi bi-check-circle-fill"></i><p><strong style="color:var(--ink)">ความปลอดภัย</strong> — ติดอันดับประเทศที่ปลอดภัยสำหรับนักท่องเที่ยวโดดเดี่ยว</p></div>
+        <div class="about-check"><i class="bi bi-check-circle-fill"></i><p><strong style="color:var(--ink)">ราคาคุ้มค่า</strong> — ค่าใช้จ่ายต่ำกว่าจุดหมายอื่นๆ โดยไม่ลดความหรูหรา</p></div>
+        <div class="about-check"><i class="bi bi-check-circle-fill"></i><p><strong style="color:var(--ink)">ระบบคมนาคม</strong> — สนามบินนานาชาติ รถไฟ เรือ ทุกเส้นทางเชื่อมถึงกัน</p></div>
+        <div class="about-check"><i class="bi bi-check-circle-fill"></i><p><strong style="color:var(--ink)">รอยยิ้มสยาม</strong> — ความอบอุ่นและน้ำใจของคนไทยที่ขึ้นชื่อระดับโลก</p></div>
+        <div class="row g-3 mt-3">
+          <div class="col-4"><div class="stat-pill"><strong>40M+</strong><span>นักท่องเที่ยว/ปี</span></div></div>
+          <div class="col-4"><div class="stat-pill"><strong>77</strong><span>จังหวัด</span></div></div>
+          <div class="col-4"><div class="stat-pill"><strong>5★</strong><span>เฉลี่ยรีวิว</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ TESTIMONIALS — รูป destination ด้านบนแต่ละ card ░░ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="sec-eyebrow justify-content-center">เสียงจากนักท่องเที่ยว</div>
+      <h2 class="sec-title">ประสบการณ์ที่ประทับใจ</h2>
+      <div class="gold-divider justify-content-center"><i class="bi bi-heart"></i></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="review-card">
+          <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=700&q=80" class="review-dest-img" alt="กรุงเทพ" loading="lazy"/>
+          <div class="review-body">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="review-quote">"ประเทศไทยเปลี่ยนชีวิตฉันไปเลย วัฒนธรรม อาหาร ผู้คน ทุกอย่างสมบูรณ์แบบมาก ต้องกลับมาอีกแน่นอน"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="review-avatar av-1">EL</div>
+              <div><div class="review-name">Emma Laurent</div><div class="review-from">🇫🇷 ปารีส, ฝรั่งเศส</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="review-card">
+          <img src="https://images.unsplash.com/photo-1571314669826-e8c23d33fd23?w=700&q=80" class="review-dest-img" alt="เชียงใหม่" loading="lazy"/>
+          <div class="review-body">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="review-quote">"เชียงใหม่สวยงามเกินคำบรรยาย วัดโบราณ อาหารเหนือ และช้างน่ารัก นี่คือทริปที่ดีที่สุดในชีวิตผม"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="review-avatar av-2">KT</div>
+              <div><div class="review-name">Kenji Tanaka</div><div class="review-from">🇯🇵 โตเกียว, ญี่ปุ่น</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-3">
+        <div class="review-card">
+          <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=700&q=80" class="review-dest-img" alt="กระบี่" loading="lazy"/>
+          <div class="review-body">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <p class="review-quote">"กระบี่ทำให้ฉันลืมทุกอย่าง น้ำทะเลใสเหมือนแก้ว หน้าผาหินปูนสวยงาม อาหารทะเลสดมากๆ"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="review-avatar av-3">SN</div>
+              <div><div class="review-name">Sofia Nakamura</div><div class="review-from">🇧🇷 เซาเปาโล, บราซิล</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ TIPS — พื้นหลังรูปวัดไทย ░░ -->
+<section id="tips">
+  <div class="container position-relative" style="z-index:1">
+    <div class="row">
+      <div class="col-lg-5 mb-5 reveal">
+        <div class="sec-eyebrow" style="color:var(--gold-lt)">เคล็ดลับนักเดินทาง</div>
+        <h2 class="sec-title" style="color:#fff">เตรียมตัวให้พร้อม<br>ก่อนเดินทาง</h2>
+        <div class="gold-divider" style="max-width:260px"><i class="bi bi-map"></i></div>
+        <p style="color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.8;font-weight:300">ก่อนออกเดินทางมาไทยแลนด์ มีเรื่องที่ควรรู้และเตรียมตัวเพื่อให้การท่องเที่ยวราบรื่น</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-sm-6 reveal reveal-delay-1"><div class="tip-item"><div class="tip-num">01</div><div><h6>เคารพวัฒนธรรมท้องถิ่น</h6><p>แต่งกายสุภาพเมื่อเข้าวัด ถอดรองเท้าก่อนเข้าบ้าน ไม่ชี้นิ้วไปที่พระ</p></div></div></div>
+          <div class="col-sm-6 reveal reveal-delay-2"><div class="tip-item"><div class="tip-num">02</div><div><h6>ดื่มน้ำให้เพียงพอ</h6><p>อากาศร้อนชื้น ควรดื่มน้ำขวดที่ปิดสนิทตลอดเวลา</p></div></div></div>
+          <div class="col-sm-6 reveal reveal-delay-3"><div class="tip-item"><div class="tip-num">03</div><div><h6>ต่อรองราคาในตลาด</h6><p>ที่ตลาดทั่วไปต่อรองได้ ทำด้วยอัธยาศัยและรอยยิ้ม</p></div></div></div>
+          <div class="col-sm-6 reveal reveal-delay-4"><div class="tip-item"><div class="tip-num">04</div><div><h6>ใช้แอปแผนที่ออฟไลน์</h6><p>ดาวน์โหลด Google Maps แบบออฟไลน์เผื่อสัญญาณอ่อน</p></div></div></div>
+          <div class="col-sm-6 reveal reveal-delay-1"><div class="tip-item"><div class="tip-num">05</div><div><h6>ซื้อซิม Tourist SIM</h6><p>ซิมการ์ดนักท่องเที่ยวราคาถูกมีที่สนามบินทุกแห่ง</p></div></div></div>
+          <div class="col-sm-6 reveal reveal-delay-2"><div class="tip-item"><div class="tip-num">06</div><div><h6>ระวังการหลอกลวง</h6><p>เลือกทัวร์ที่ได้รับอนุญาต ระวังข้อเสนอดีเกินจริง</p></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ CTA ░░ -->
+<section id="cta-section">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div style="position:relative;z-index:1">
+        <div class="sec-eyebrow justify-content-center" style="color:var(--gold)">พร้อมแล้วหรือยัง?</div>
+        <h2 class="cta-title mt-2">เริ่มต้นการเดินทางสู่<br><em>ดินแดนแห่งรอยยิ้ม</em></h2>
+        <div class="gold-divider justify-content-center mt-3"><i class="bi bi-airplane text-white"></i></div>
+        <p style="color:rgba(255,255,255,.5);font-size:.95rem;max-width:480px;margin:1rem auto 2rem;line-height:1.8;font-weight:300">ปล่อยให้ไทยแลนด์สร้างความทรงจำที่ดีที่สุดในชีวิตคุณ ทีมงานของเราพร้อมช่วยวางแผนทริปในฝัน</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="#" class="btn-hero-primary"><i class="bi bi-calendar-check"></i> วางแผนทริปของฉัน</a>
+          <a href="#" class="btn-hero-ghost"><i class="bi bi-telephone"></i> ติดต่อเราเลย</a>
+        </div>
+        <div class="d-flex justify-content-center gap-4 mt-4 flex-wrap" style="font-size:.8rem;color:#3a2e20">
+          <span><i class="bi bi-shield-check" style="color:var(--gold)"></i> ปลอดภัย 100%</span>
+          <span><i class="bi bi-headset" style="color:var(--gold)"></i> ซัพพอร์ต 24/7</span>
+          <span><i class="bi bi-award" style="color:var(--gold)"></i> รับรองโดย TAT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer id="footer">
+  <div class="container py-5">
+    <div class="row gy-4 gx-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand-text">Thailand</div>
+        <p class="footer-tagline">"Amazing Thailand" — ดินแดนแห่งรอยยิ้ม วัฒนธรรมอันงดงาม และธรรมชาติที่สวยสด รอต้อนรับคุณ</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="footer-heading">จุดหมาย</div>
+        <a href="#" class="f-link">กรุงเทพมหานคร</a>
+        <a href="#" class="f-link">เชียงใหม่</a>
+        <a href="#" class="f-link">ภูเก็ต</a>
+        <a href="#" class="f-link">กระบี่</a>
+        <a href="#" class="f-link">อยุธยา</a>
+        <a href="#" class="f-link">เกาะสมุย</a>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="footer-heading">ประสบการณ์</div>
+        <a href="#" class="f-link">ชายหาด</a>
+        <a href="#" class="f-link">วัฒนธรรม</a>
+        <a href="#" class="f-link">การผจญภัย</a>
+        <a href="#" class="f-link">อาหาร</a>
+        <a href="#" class="f-link">สปา</a>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="footer-heading">ข้อมูล</div>
+        <a href="#" class="f-link">วีซ่าและเอกสาร</a>
+        <a href="#" class="f-link">การเดินทาง</a>
+        <a href="#" class="f-link">ที่พัก</a>
+        <a href="#" class="f-link">สกุลเงิน</a>
+        <a href="#" class="f-link">ติดต่อเรา</a>
+      </div>
+    </div>
+  </div>
+  <hr class="footer-divider"/>
+  <div class="container py-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2" style="font-size:.78rem;color:#2a1f14">
+      <span>© 2026 Amazing Thailand. สงวนลิขสิทธิ์ทุกประการ</span>
+      <div class="d-flex gap-3">
+        <a href="#" class="f-link" style="padding:0;font-size:.78rem">นโยบายความเป็นส่วนตัว</a>
+        <a href="#" class="f-link" style="padding:0;font-size:.78rem">ข้อกำหนดการใช้งาน</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('load',()=>setTimeout(()=>document.getElementById('preloader').classList.add('hide'),500));
+  const nav=document.getElementById('mainNav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+  document.querySelectorAll('#mobileNav a').forEach(a=>a.addEventListener('click',()=>{
+    const col=document.getElementById('mobileNav');
+    if(col.classList.contains('show'))bootstrap.Collapse.getInstance(col)?.hide();
+  }));
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
